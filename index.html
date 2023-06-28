@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BirthDay</title>
+        <link rel="stylesheet" href="./index.css">
+        
+</head>
+<body>
+        <button class="add_user" id="addData">Adduser</button>
+
+        <div class="heading">Next Upcoming BirthDays</div>
+        <table>
+                <thead>
+                        <tr>
+                                <th> sr No</th>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>DOB</th>
+                                <th>Days Remaining</th>
+                                <th>Delete</th>  
+                                <th>Update</th>
+                                  
+                        </tr>
+                </thead>
+                <tbody class="table_body">
+                        <tr>
+                                <td>1</td>
+                                
+                                <td>vikas</td>
+                                <td>19/12/1997</td>
+                                <td>12</td>
+                                <td>Delete</td>
+                                <td>Update</td>
+                                
+                        </tr>                      
+                </tbody>
+        </table>
+
+        <div class="heading" > Past BirthDays</div>
+
+        <table>
+                <thead>    
+                </thead>
+                <tbody class="past_birthday">
+                                           
+                </tbody>
+        </table>
+
+ <div class="form_wraper">
+        <form class="add_Data" onsubmit="submiteForm(event)">
+                Name
+                <input  type="text"/>
+                DOB
+                <input type="text"/>
+                <div style="display: flex; ">
+                <input type="submit" value="submit" style="width: 70px; margin: 20px; display: inline;"/>
+                <input type="button" onclick="closeForm()" value="cancel" style="width: 70px; margin: 20px; display: inline"/>
+        </div>
+        </form>
+</div>
+
+
+<div class="update_user" style="justify-content: center; width: 100vw;">
+        <form class="add_Data" onsubmit="update(event)">
+                Name
+                <input class="user_name"  type="text"/>
+                DOB
+                <input class="user_DOB" type="text"/>
+                ID
+                <input type="text" class="user_ID"  readonly/>
+
+                <div style="display: flex; ">
+                <input type="submit" value="submit" style="width: 70px; margin: 20px; display: inline;;"/>
+                <input type="button" onclick="closeUpdateForm()" value="cancel" style="width: 70px; margin: 20px; display: inline"/>
+        </div>
+        </form>
+</div>
+
+
+
+<div class="loading_img" >
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/35771931234507.564a1d2403b3a.gif" width="10%" />
+<p>Loading...</p></div>
+         <script src="./index.js" >
+
+         </script>
+</body>
+</html>
